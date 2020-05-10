@@ -1,0 +1,21 @@
+name: LuckPermsCookbook
+version: ${project.version}
+description: Tasty recipes for the LuckPerms API
+main: me.lucko.lpcookbook.CookbookPlugin
+api-version: 1.13
+depend: [LuckPerms]
+authors: [Luck]
+
+commands:
+  lpcookbook-addpermission:
+    permission: lpcookbook.addpermission
+  lpcookbook-getgroups:
+    permission: lpcookbook.getgroups
+  lpcookbook-getofflineprefix:
+    permission: lpcookbook.getofflineprefix
+  lpcookbook-getprefix:
+    permission: lpcookbook.getprefix
+  lpcookbook-setgroup:
+    permission: lpcookbook.setgroup
+  lpcookbook-setprefix:
+    permission: lpcookbook.setprefix

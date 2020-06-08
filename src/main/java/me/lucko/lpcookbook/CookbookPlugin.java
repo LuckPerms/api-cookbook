@@ -6,6 +6,9 @@ import me.lucko.lpcookbook.commands.GetOfflinePrefixCommand;
 import me.lucko.lpcookbook.commands.GetPrefixCommand;
 import me.lucko.lpcookbook.commands.SetGroupCommand;
 import me.lucko.lpcookbook.commands.SetPrefixCommand;
+import me.lucko.lpcookbook.listener.PermissionNotifyListener;
+import me.lucko.lpcookbook.listener.PlayerFirstJoinListener;
+import me.lucko.lpcookbook.listener.PlayerUsernameChangeListener;
 
 import net.luckperms.api.LuckPerms;
 
@@ -27,6 +30,11 @@ public class CookbookPlugin extends JavaPlugin {
         getCommand("lpcookbook-getprefix").setExecutor(new GetPrefixCommand(this, this.luckPerms));
         getCommand("lpcookbook-setgroup").setExecutor(new SetGroupCommand(this, this.luckPerms));
         getCommand("lpcookbook-setprefix").setExecutor(new SetPrefixCommand(this, this.luckPerms));
+
+        // Define some example listeners.
+        new PermissionNotifyListener(this, this.luckPerms).register();
+        new PlayerFirstJoinListener(this, this.luckPerms).register();
+        new PlayerUsernameChangeListener(this, this.luckPerms).register();
     }
 
 }

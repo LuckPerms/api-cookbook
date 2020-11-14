@@ -38,7 +38,7 @@ public class SetGroupCommand implements CommandExecutor {
         OfflinePlayer player = this.plugin.getServer().getOfflinePlayer(playerName);
 
         // Player not known?
-        if (player == null) {
+        if (!player.hasPlayedBefore()) {
             sender.sendMessage(ChatColor.RED + playerName +  " has never joined the server!");
             return true;
         }

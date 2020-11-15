@@ -32,7 +32,7 @@ public class PlayerFirstJoinListener {
         Set<Outcome> outcomes = result.getOutcomes();
 
         if (outcomes.contains(Outcome.CLEAN_INSERT)) {
-            Bukkit.broadcastMessage(ChatColor.GREEN + e.getUsername() + " joined the server for the first time!"); // made this server instead of network since all the other messages also says server
+            Bukkit.broadcastMessage(ChatColor.GREEN + e.getUsername() + " joined the network for the first time!");
         }
     }
 

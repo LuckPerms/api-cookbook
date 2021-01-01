@@ -9,6 +9,7 @@ import me.lucko.lpcookbook.commands.SetPrefixCommand;
 import me.lucko.lpcookbook.listener.PermissionNotifyListener;
 import me.lucko.lpcookbook.listener.PlayerFirstJoinListener;
 import me.lucko.lpcookbook.listener.PlayerUsernameChangeListener;
+import me.lucko.lpcookbook.listener.SimpleLoggingListener;
 
 import net.luckperms.api.LuckPerms;
 
@@ -35,6 +36,7 @@ public class CookbookPlugin extends JavaPlugin {
         new PermissionNotifyListener(this, this.luckPerms).register();
         new PlayerFirstJoinListener(this, this.luckPerms).register();
         new PlayerUsernameChangeListener(this, this.luckPerms).register();
+        new SimpleLoggingListener(this, this.luckPerms).register();
     }
 
 }

@@ -16,11 +16,11 @@ import net.luckperms.api.node.types.SuffixNode;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
-public class PermissionNotifyListener {
+public class PlayerNodeChangeListener {
     private final CookbookPlugin plugin;
     private final LuckPerms luckPerms;
 
-    public PermissionNotifyListener(CookbookPlugin plugin, LuckPerms luckPerms) {
+    public PlayerNodeChangeListener(CookbookPlugin plugin, LuckPerms luckPerms) {
         this.plugin = plugin;
         this.luckPerms = luckPerms;
     }

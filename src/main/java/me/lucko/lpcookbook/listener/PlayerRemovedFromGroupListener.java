@@ -36,7 +36,7 @@ public class PlayerRemovedFromGroupListener {
 
         // Check if the node was an inheritance node
         Node node = e.getNode();
-        if (node.getType() != NodeType.PERMISSION) {
+        if (node.getType() != NodeType.INHERITANCE) {
             return;
         }
 

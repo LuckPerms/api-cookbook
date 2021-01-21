@@ -5,13 +5,9 @@ import me.lucko.lpcookbook.CookbookPlugin;
 import net.luckperms.api.LuckPerms;
 import net.luckperms.api.event.EventBus;
 import net.luckperms.api.event.node.NodeAddEvent;
-import net.luckperms.api.event.player.PlayerDataSaveEvent;
-import net.luckperms.api.model.PermissionHolder;
-import net.luckperms.api.model.PlayerSaveResult;
 import net.luckperms.api.model.user.User;
 import net.luckperms.api.node.Node;
 import net.luckperms.api.node.NodeType;
-import net.luckperms.api.node.types.InheritanceNode;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

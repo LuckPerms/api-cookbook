@@ -4,6 +4,7 @@ import me.lucko.lpcookbook.commands.AddPermissionCommand;
 import me.lucko.lpcookbook.commands.GetGroupsCommand;
 import me.lucko.lpcookbook.commands.GetOfflinePrefixCommand;
 import me.lucko.lpcookbook.commands.GetPrefixCommand;
+import me.lucko.lpcookbook.commands.GroupMembersCommand;
 import me.lucko.lpcookbook.commands.SetGroupCommand;
 import me.lucko.lpcookbook.commands.SetPrefixCommand;
 import me.lucko.lpcookbook.listener.GroupPrefixChangedListener;
@@ -32,6 +33,7 @@ public class CookbookPlugin extends JavaPlugin {
         getCommand("lpcookbook-getgroups").setExecutor(new GetGroupsCommand(this, this.luckPerms));
         getCommand("lpcookbook-getofflineprefix").setExecutor(new GetOfflinePrefixCommand(this, this.luckPerms));
         getCommand("lpcookbook-getprefix").setExecutor(new GetPrefixCommand(this, this.luckPerms));
+        getCommand("lpcookbook-groupmembers").setExecutor(new GroupMembersCommand(this, this.luckPerms));
         getCommand("lpcookbook-setgroup").setExecutor(new SetGroupCommand(this, this.luckPerms));
         getCommand("lpcookbook-setprefix").setExecutor(new SetPrefixCommand(this, this.luckPerms));
 
